@@ -17,9 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div
-          style={{ border: "2px solid red", height: "100vh", padding: "20px" }}
-        >
+        <div style={{ border: "2px solid red", padding: "20px" }}>
           <button onClick={() => setCount((cur) => cur + 1)}>업</button>
           <br />
           <button onClick={() => setCount((cur) => cur - 1)}>다운</button>

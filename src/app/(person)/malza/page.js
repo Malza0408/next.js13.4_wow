@@ -10,7 +10,7 @@ function Malza() {
       <br />
       <Link href={"/"}>- 메인으로 이동</Link>
       <br />
-      <Link href={"/malza/RSN"}>- 회사로 이동</Link>
+      <Link href={"/malza/rsn"}>- 회사로 이동</Link>
     </>
   );
 }
