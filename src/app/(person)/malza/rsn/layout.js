@@ -2,7 +2,7 @@
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useState } from "react";
 
-export default function Layout({ children }) {
+export default function Layout(props) {
   const [count, setCount] = useState(0);
   const segment = useSelectedLayoutSegment();
 
@@ -18,7 +18,9 @@ export default function Layout({ children }) {
       <br />
       <p>여긴 2depth 레이아웃입니다.</p>
       <b>변경된 2뎁스 카운터는 : {count}</b>
-      {children}
+      {props.children}
+      {props.team}
+      {props.analytics}
     </div>
   );
 }
